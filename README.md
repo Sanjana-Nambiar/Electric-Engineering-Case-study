@@ -15,23 +15,32 @@ process that computes the joint parameters that achieve a specified position of 
 as inverse kinematics. This program is for 2D forward Kinematics and uses the formulas 
 
  xf = xi + length *cos(angle) 
+ 
  yf = yi + length*sin(angle) 
+
 where the angle here is between the x-axis and the segment 
+
 xf and yf are the coordinates of the end point 
+
 xi and yi are the coordinates of the initial point 
 
 Degree of freedom is defined as the minimum number of independent variables required to define the 
 position or motion of a system is known as degree of freedom. Degree of freedom is the property of 
 kinematic chain which shows that in how many directions the connected links of the kinematic can move 
 freely. It is also known by mobility. 
+
 DOF = 3 – Restraint 
 
 To determine DOF of 2-D planar mechanism, Kutzback was a scientist who gave the relation 
 
 DOF = 3(L-1) – 2j – h 
+
 where, 
+
 L = number of links 
+
 j = number of joints 
+
 h = number of higher pairs 
 
 Sometimes a system may have one or more links of a mechanism which do not introduce any extra 
@@ -43,7 +52,9 @@ links of the mechanism, such a link is said to have redundant DOF. Due to this D
 mechanism is modified. 
 
 DOF = 3(L-1) – 2j – h – Fr 
+
 where, 
+
 Fr = redundant motion
 
 Now Grubler was another scientist, he utilized the Kutzback equation and gave his formulation i.e. he used 
@@ -51,8 +62,11 @@ the equation and put DOF equal to 1 and higher pair equal to zero for a kinemati
 was the extension of Kutzback equation and expressed as 
 
 DOF = 3(L-1) – 2j – h 
+
 1 = 3(L-1) – 2j – 0 
+
 3L – 2j – 4 = 0 (this is the derived equation of Grubler’s criterion.) 
+
 From Grubler’s criterion it is clear that to hold the equation number of links should be even i.e. minimum 
 number of links required is 4. 
 
